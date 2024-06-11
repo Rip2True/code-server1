@@ -56,3 +56,13 @@ USER 1000
 ENV USER=coder
 WORKDIR /home/coder
 ENTRYPOINT ["/usr/bin/entrypoint.sh", "--bind-addr", "0.0.0.0:8080", "."]
+
+# You can add custom software and dependencies for your environment here. Some examples:
+
+RUN code-server --install-extension esbenp.prettier-vscode
+RUN sudo apt-get install -y build-essential
+RUN COPY myTool /home/coder/myTool
+
+# Install NodeJS
+RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
+RUN sudo apt-get install -y nodejs
