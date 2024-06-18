@@ -22,14 +22,33 @@ Code v99.99.999
 
 ## Unreleased
 
+## [4.90.2](https://github.com/coder/code-server/releases/tag/v4.90.2) - 2024-06-14
+
+Code v1.90.1
+
+### Changed
+
+- Updated to Code 1.90.1.
+
+## [4.90.1](https://github.com/coder/code-server/releases/tag/v4.90.1) - 2024-06-12
+
 Code v1.90.0
 
-## Changed
+### Fixed
+
+- Cache a call to get CPU information used in telemetry that could result in a
+  lack responsiveness if it was particularly slow.
+
+## [4.90.0](https://github.com/coder/code-server/releases/tag/v4.90.0) - 2024-06-11
+
+Code v1.90.0
+
+### Changed
 
 - Updated to Code 1.90.0.
 - Updated Node to 20.11.1.
 
-## Added
+### Added
 
 - Send contents to the clipboard in the integrated terminal by piping to
   `code-server --stdin-to-clipboard` or `code-server -c`.
@@ -45,7 +64,7 @@ Code v1.90.0
 
 Code v1.89.1
 
-## Changed
+### Changed
 
 - Updated to Code 1.89.1.
 
@@ -53,7 +72,7 @@ Code v1.89.1
 
 Code v1.89.0
 
-## Changed
+### Changed
 
 - Updated to Code 1.89.0.
 
@@ -61,7 +80,7 @@ Code v1.89.0
 
 Code v1.88.1
 
-## Changed
+### Changed
 
 - Updated to Code 1.88.1.
 
@@ -69,12 +88,12 @@ Code v1.88.1
 
 Code v1.88.0
 
-## Changed
+### Changed
 
 - Updated to Code 1.88.0.
 - Updated Node to 18.18.2.
 
-## Fixed
+### Fixed
 
 - Fix masking the exit code when failing to install extensions on the command
   line outside the integrated terminal. Installing extensions inside the
@@ -84,7 +103,7 @@ Code v1.88.0
 
 Code v1.87.2
 
-## Changed
+### Changed
 
 - Updated to Code 1.87.2.
 - Enable keep-alive for proxy agent.
@@ -93,7 +112,7 @@ Code v1.87.2
 
 Code v1.87.0
 
-## Changed
+### Changed
 
 - Updated to Code 1.87.0.
 
@@ -101,7 +120,7 @@ Code v1.87.0
 
 Code v1.86.2
 
-## Changed
+### Changed
 
 - Updated to Code 1.86.2.
 
@@ -109,12 +128,12 @@ Code v1.86.2
 
 Code v1.86.1
 
-## Changed
+### Changed
 
 - Updated to Code 1.86.1.
 - Updated to Node 18.17.1.
 
-## Added
+### Added
 
 - Docker images for Fedora and openSUSE.
 
@@ -122,7 +141,7 @@ Code v1.86.1
 
 Code v1.86.0
 
-## Changed
+### Changed
 
 - Updated to Code 1.86.0.
 
@@ -130,11 +149,11 @@ Code v1.86.0
 
 Code v1.85.2
 
-## Changed
+### Changed
 
 - Updated to Code 1.85.2.
 
-## Fixed
+### Fixed
 
 - Query variables are no longer double-encoded when going over the path proxy.
 
